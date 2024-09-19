@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* etaá 1: regras Comuns, de uso geral */
+    * {
+        box-sizing: border-box;
+    }
+
+    body,
+    h1,
+    h2,
+    p {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    body {
+        font-family: Verdana;
+        background-color: whitesmoke;
+    }
+
+    .topo {
+        background-color: pink;
+        padding: 4px;
+        text-align: center;
+
+    }
+
+    .menu {
+        background-color: yellow;
+
+    }
+
+    .conteudo {
+        background-color: aquamarine;
+        padding: 4px;
+    }
+
+    .um {
+        background-color: orange;
+    }
+
+    .dois {
+        background-color: hotpink;
+    }
+
+    .tres {
+        background-color: green;
+    }
+
+    .rodape {
+        background-color: purple;
+    }
+
+    /* etapa 2: REGRAS CONDICIONAIS, de uso RESPONSIVO */
+    /* media Query ou Braeakpoint */
+    @media screen and (min-width: 644px) {
+        .topo {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        h1 {
+            background-color: white;
+        }
+
+        .menu {
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+
+
+
+        /* habilitando a "quebra",ou seja quando não tiver mais espaço para colocar os artigos lado a lado, oartigo que estiver sobrando irá para baixo */
+        .conteudo {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+        .um {
+            width: 30%;
+        }
+
+        .dois {
+            width: 70%;
+        }
+
+    }
+
+    /* final da media query de 644px */
+
+
+    @media screen and (min-width: 1000px) {
+        .topo {
+            display: flex;
+            justify-content: space-between;
+            height: 100px;
+            font-size: 48;
+        }
+        h1 {display: flex;
+            font-size: 48px;
+            align-items: center;
+        }
+
+        a {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 2;
+        }
+
+        .conteudo {
+            display: flex wrap;
+            justify-content: space-between;
+        }
+
+        .um {
+            width: 30%;
+        }
+
+        .dois {
+            width: 30%;
+        }
+
+        .tres {
+            width: 30%;
+        } 
+
+    }
+</style>
+
+<body>
+
+    <header class="topo">
+        <h1>Site exemplo</h1>
+        <nav class="menu">
+
+            <a href="">link 1</a>
+            <a href="">link 2</a>
+            <a href="">link 3</a>
+
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <article class="um">
+            <h2>Um</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus eos expedita esse fugit sapiente
+                devidate pn color
+                ab ips</p>
+        </article>
+        <article class="dois">
+            <h2>Dois</h2>
+            <p>Lorem ipsum dolor sit amet consectetur in la position devá adipisicing elit. Voluptatem ipsum fugiat
+                dolores ea. !</p>
+        </article>
+        <article class="tres">
+            <h2>Três</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quisquam, sequi cumque voluptates quam a
+                partir de ter uno
+                pariatur. ?</p>
+        </article>
+    </main>
+
+
+    <footer class="rodape">
+        <h2>
+            exemplo site layout
+        </h2>
+
+    </footer>
+
+
+</body>
+
+</html>
